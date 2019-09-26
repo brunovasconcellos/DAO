@@ -46,11 +46,21 @@ $user->insert();
 
 echo $user;*/
 
-$user = new User();
+//update usuario
+/*$user = new User();
 
 $user->loadById(5);
 
 $user->update("yusuke", "74536");
+
+echo $user;
+*/
+
+$user = new User();
+
+$user->loadById(3);
+
+$user->delete();
 
 echo $user;
 
