@@ -33,9 +33,24 @@ echo json_encode($search);
 
 //carrega um usuario usando login e senha
 
-$user = new User();
+/*$user = new User();
 
 $user->login("ryuji", "217362");
+
+echo $user;*/
+
+// criando insert
+/*$user = new User("makoto", "4312jdfers");
+
+$user->insert();
+
+echo $user;*/
+
+$user = new User();
+
+$user->loadById(5);
+
+$user->update("yusuke", "74536");
 
 echo $user;
 
